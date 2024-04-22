@@ -124,13 +124,13 @@ kubectl get po -w
 ```
 Set a new image for the deployment
 ```
-kubectl set image deploy dep1 nginx=nginx:latest --record
+kubectl set image deploy dep2 nginx=nginx:latest --record
 ```
 Check how the pods are getting deleted and recreated. 
 
 Cross check if the image has been updated by executing the below command
 ```
-kubectl describe deployments.apps dep1
+kubectl describe deployments.apps dep2
 ```
 
 ### Task 3: Blue/Green Deployment in Kubernetes 
